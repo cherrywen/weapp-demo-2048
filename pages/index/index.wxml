@@ -1,0 +1,29 @@
+<view class="header">
+    <view class="top">
+        <view class="title">2048</view>
+        <view class="score">
+            <view class="scores-container">
+                <view class="score-desc">best</view>
+                <view class="score-num">{{maxscore}}</view>
+            </view>
+            <view class="scores-container">
+                <view class="score-desc">score</view>
+                <view class="score-num">{{score}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="above-game">
+        <view class="game-intro">Join the numbers and get to the 2048 tile!</view>
+        <view class="new-game" bindtap="newGame">New Game</view>
+    </view>
+</view>
+<view class="container" bindtouchstart="onTouchStart" bindtouchmove="onTouchMove" bindtouchend="onTouchEnd">
+    <view class="cell-container" wx:for="{{board}}" wx:for-item="row">
+        <view class="cell cell-{{item}}" wx:for="{{row}}">{{item}}</view>
+    </view>
+    <view class="game-over" style="display:{{isShow}}">
+        <view class="game-over-desc">本次得分</view>
+        <text class="end-score">{{score}}</text>
+        <view class="restart-game" bindtap="newGame">Restart</view>
+    </view>
+</view>

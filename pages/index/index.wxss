@@ -1,0 +1,178 @@
+.header {
+    width: 100%;
+    margin-bottom: 40rpx;
+}
+
+.top, .above-game {
+    display: flex;
+    width: 670rpx;
+    margin: 20rpx auto 0;
+}
+
+.top .title {
+    font-size: 80rpx;
+    font-weight: bold;
+    margin-top: 20rpx;
+}
+
+.top .score {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top .scores-container {
+    margin-left: 10rpx;
+    padding: 10rpx 20rpx;
+    background-color: #bbada0;
+    color: white;
+    text-align: center;
+    border-radius: 5rpx;
+}
+
+.top .score-desc {
+    color: #eee4da;
+    font-size: 20px;
+}
+
+.above-game .game-intro {
+    font-size: 15px;
+    width: 400rpx;
+}
+
+.above-game .new-game {
+    display: block;
+    width: 270rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    text-align: center;
+    background: #8f7a66;
+	color: #f9f6f2;
+    border-radius: 5rpx;
+}
+
+.container {
+    width: 670rpx;
+    height: 670rpx;
+    margin: 0 auto;
+    background-color: #bbada0;
+    border-radius: 10rpx;
+    overflow: hidden;
+    position: relative;
+}
+
+.cell-container {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 22rpx;
+}
+
+.cell {
+    width: 140rpx;
+    height: 140rpx;
+    margin-left: 22rpx;
+    text-align: center;
+    line-height: 140rpx;
+    font-size: 60rpx;
+    border-radius: 10rpx;
+}
+
+.game-over {
+    position: absolute;
+    width: 670rpx;
+    height: 670rpx;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+}
+
+.game-over .game-over-desc {
+    font-size: 60rpx;
+    margin: 160rpx auto 25rpx;
+}
+
+.game-over .end-score {
+    font-size: 60rpx;
+}
+
+.game-over .restart-game {
+    margin: 35rpx auto;
+    width: 220rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    text-align: center;
+    background: #8f7a66;
+	color: #f9f6f2;
+    border-radius: 10rpx;
+}
+
+.cell-0 {
+    color: #ccc0b3;
+    background-color: #ccc0b3;
+}
+
+.cell-2 {
+    color: #776e65;
+    background-color: #eee4da;
+}
+
+.cell-4 {
+    color: #776e65;
+    background-color: #ede0c8;
+}
+
+.cell-8 {
+    color: white;
+    background-color: #f2b179;
+}
+
+.cell-16 {
+    color: white;
+    background-color: #f59563;
+}
+
+.cell-32 {
+    color: white;
+    background-color: #f67c5f;
+}
+
+.cell-64 {
+    color: white;
+    background-color: #f65e3b;
+}
+
+.cell-128 {
+    color: white;
+    background-color: #edcf72;
+}
+
+.cell-256 {
+    color: white;
+    background-color: #edcc61;
+}
+
+.cell-512 {
+    color: white;
+    background-color: #9c0;
+}
+
+.cell-1024 {
+    color: white;
+    background-color: #33b5e5;
+}
+
+.cell-2048 {
+    color: white;
+    background-color: #09c;
+}
+
+.cell-4096 {
+    color: white;
+    background-color: #a6c;
+}
+
+.cell-8192 {
+    color: white;
+    background-color: #93c;
+}
